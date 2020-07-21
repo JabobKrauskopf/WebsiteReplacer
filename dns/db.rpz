@@ -1,0 +1,11 @@
+$TTL 600
+@            IN    SOA  localhost. root.localhost.  (
+                          2020072101   ; serial
+                          1h           ; refresh
+                          30m          ; retry
+                          1w           ; expiry
+                          30m)         ; minimum
+                   IN     NS    localhost.
+
+test.server             A       192.168.0.124
+de.wikipedia.org        A       192.168.0.124

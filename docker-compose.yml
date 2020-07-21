@@ -5,7 +5,9 @@ services:
       ports:
         - '53:53/udp'
     web:
-      build: ./web
+      image: 'nginx:1.19.1-alpine'
+      volumes: 
+        - './web/html:/usr/share/nginx/html'
       ports:
         - '8080:80'
     proxy:

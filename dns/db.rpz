@@ -7,5 +7,6 @@ $TTL 600
                           30m)         ; minimum
                    IN     NS    localhost.
 
-test.server                A       192.168.1.21
-de.wikipedia.org           A       192.168.1.21
+test.server                A       192.168.0.124
+de.wikipedia.org           A       192.168.0.124
+de.wikipedia.org           AAAA    ::1
